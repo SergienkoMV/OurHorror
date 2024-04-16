@@ -274,5 +274,15 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
+
+        private void OnTriggerEnter(Collider other)
+		{
+            Debug.Log("play sound");
+            if (other.gameObject.GetComponent<SoundTrigger>())
+			{
+				other.GetComponent<SoundTrigger>().StartSound();
+				
+            }
+		}
 	}
 }

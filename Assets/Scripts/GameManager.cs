@@ -46,14 +46,14 @@ public class GameManager : MonoBehaviour
         //Открытие меню
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            GameObject.Find("Menu").GetComponent< MenuController>().SetupMenu();
-//            _menu.GetComponent<MenuController>().OpenSettings();
+            GameObject.Find("Menu").GetComponent<MenuController>().SetupMenu();
+            //            _menu.GetComponent<MenuController>().OpenSettings();
 
             //if (!_menu.isActiveAndEnabled && !_pause)
             //{
             //    _menu.gameObject.SetActive(true);
             //    setPause();
-                
+
             //}
 
             //if (_menu.<_mainMenu.Transform> _mainMenu.isActiveAndEnabled)
